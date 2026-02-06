@@ -189,6 +189,6 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`服务已启动：http://localhost:${PORT}`);
+  console.log(`服务已启动：http://0.0.0.0:${PORT}`);
   console.log(`后台登录 token：${ADMIN_TOKEN}`);
 });
