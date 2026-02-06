@@ -1,0 +1,121 @@
+:root {
+  --brand: #175cff;
+  --bg: #f6f8fc;
+  --text: #1f2a44;
+  --muted: #6f7a94;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #e9edf8;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 20px;
+}
+
+.hero {
+  background: linear-gradient(130deg, #f3f7ff 10%, #eef3ff 90%);
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 620px;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+section {
+  padding: 56px 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e9edf8;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.card h3 { margin-top: 0; }
+.muted { color: var(--muted); }
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input, textarea, button {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccd5ec;
+}
+
+button {
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #eef3ff;
+  color: var(--brand);
+}
+
+footer {
+  background: var(--bg);
+  color: var(--muted);
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 720px) {
+  .hero h1 { font-size: 32px; }
+  .nav-links { display: none; }
+}
