@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>星云科技 - 企业官网</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand" id="brandName">星云科技</div>
+        <nav class="nav-links">
+          <a href="#about">关于我们</a>
+          <a href="#services">服务能力</a>
+          <a href="#news">新闻中心</a>
+          <a href="#contact">商务咨询</a>
+          <a href="/admin">后台管理</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 id="heroTitle">以数字化驱动企业增长</h1>
+          <p id="heroDesc"></p>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <h2>服务能力</h2>
+          <div class="grid" id="serviceList"></div>
+        </div>
+      </section>
+
+      <section id="news" style="background:#f8faff;">
+        <div class="container">
+          <h2>新闻中心</h2>
+          <div class="grid" id="newsList"></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container grid" style="grid-template-columns: 1.1fr 1fr;">
+          <div id="about">
+            <h2>关于我们</h2>
+            <p class="muted" id="aboutText"></p>
+          </div>
+          <div class="card">
+            <h3>提交需求</h3>
+            <form id="messageForm">
+              <input name="name" placeholder="联系人" required />
+              <input name="company" placeholder="公司名称" required />
+              <input name="phone" placeholder="联系电话" required />
+              <textarea name="requirement" rows="4" placeholder="项目需求" required></textarea>
+              <button type="submit">提交咨询</button>
+            </form>
+            <p class="muted" id="msgTip"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="year"></span> 星云科技 · All rights reserved.</div>
+    </footer>
+
+    <script src="/site.js"></script>
+  </body>
+</html>

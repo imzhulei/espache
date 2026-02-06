@@ -1,0 +1,11 @@
+{
+  "name": "espache-corp-site",
+  "version": "1.0.0",
+  "description": "企业官网与后台管理系统",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "license": "MIT"
+}
